@@ -12,5 +12,5 @@ window.onscroll = e => {
 	}
 
 	slide.style.opacity = '0.0';
-	slide.style.cursor = 'none';
+	slide.style.cursor = 'default';
 }
