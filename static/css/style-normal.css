@@ -16,16 +16,20 @@ html, body {
 	background-color: yellow;
 }
 
-header div > div {
-	position: relative;
+header {
 	width: 100%;
-	padding: 12px 30px;
+}
+
+header > div {
+	position: relative;
+	padding: 8px 22px;
 	background-color: var(--dpurple);
 	display: flex;
 	align-items: center;
+	height: 4vh;
 }
 
-header div div h4 {
+header div h4 {
 	margin: 0;
 	padding: 0;
 	color: white;
@@ -34,9 +38,9 @@ header div div h4 {
 p {
 	position: relative;
 	font-family: 'Roboto', 'Helvetica', sans-serif;
-	width: 60%;
 	color: white;
-	font-size: 18px;
+	font-size: calc(1vw + 1vh);
+	width: 90%;
 }
 
 #presentation {
@@ -50,10 +54,8 @@ p {
 }
 
 #presentation > img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	filter: brightness(0.4);
+	height: auto;
+	width: 50%;
 }
 
 #presentation div {
@@ -84,9 +86,14 @@ p {
 	justify-content: center;
 	height: 60vh;
 	width: 100%;
+	padding: 16px 0px;
 }
 
 .card div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	max-width: 80%;
 }
 
@@ -199,4 +206,20 @@ p {
 	width:  inherit;
 	height: inherit;
 	border-radius: 100%;
+}
+
+.add-space-2 {
+	padding: 2px 0px;
+}
+
+.add-space-4 {
+	padding: 4px 0px;
+}
+
+.add-space-8 {
+	padding: 8px 0px;
+}
+
+.add-space-16 {
+	padding: 60px 0px;
 }
